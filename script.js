@@ -11,4 +11,4 @@ musicControl.addEventListener('click',()=>{
   if(music.paused){music.play().then(()=>{musicControl.textContent='Ⅱ Pause music';}).catch(()=>{});}
   else{music.pause();musicControl.textContent='▶ Play music';}
 });env.addEventListener('click',()=>{if(env.classList.contains('open'))return;env.classList.add('open');setTimeout(()=>{stage.classList.add('hidden');message.classList.remove('hidden')},1450)});const phone='27682464407';const reply='Hi! I would love to join you for lunch at Bean Bag Jazz Lounge on Sunday, 29 November 2026. ❤️';document.getElementById('yes').href='https://wa.me/'+phone+'?text='+encodeURIComponent(reply);const no=document.getElementById('no'),area=document.querySelector('.actions');function dodge(){const r=area.getBoundingClientRect(),b=no.getBoundingClientRect(),range=Math.max(0,(r.width-b.width)/2-5),x=(Math.random()*2-1)*range,y=(Math.random()*2-1)*32;no.style.transform=`translate(${x}px,${y}px)`}no.addEventListener('pointerenter',dodge);no.addEventListener('touchstart',e=>{e.preventDefault();dodge()},{passive:false});no.addEventListener('focus',dodge);no.addEventListener('click',dodge);
-music.volume = 0.02;
+music.volume = 0.01;
